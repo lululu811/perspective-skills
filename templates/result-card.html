@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三线文案大锅饭 · Skill 成果展示</title>
+    <style>
+        :root {
+            --bg: #1a1a2e;
+            --surface: #16213e;
+            --accent: #e94560;
+            --text: #eaeaea;
+            --muted: #8a8a9a;
+            --border: #2a2a4a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .card {
+            max-width: 800px;
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .stat-item {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .stat-label {
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        .model-list {
+            list-style: none;
+        }
+        .model-list li {
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            background: rgba(255,255,255,0.02);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 14px;
+        }
+        .model-name {
+            font-weight: 600;
+            color: var(--accent);
+        }
+        .tag {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 8px;
+        }
+        .tag-high { background: #1b4332; color: #95d5b2; }
+        .tag-medium { background: #5c3d0e; color: #ffd166; }
+        .tag-low { background: #4a1525; color: #ff6b6b; }
+        .status {
+            display: inline-block;
+            font-size: 11px;
+            margin-left: 4px;
+            color: var(--muted);
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="badge">SKILL · 思维蒸馏</div>
+        <h1>三线文案大锅饭 · 思维操作系统</h1>
+        <p class="subtitle">基于 N 个视频/直播的深度调研</p>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">N</div>
+                <div class="stat-label">心智模型</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">N</div>
+                <div class="stat-label">决策启发式</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">N</div>
+                <div class="stat-label">来源数量</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">N%</div>
+                <div class="stat-label">一手来源占比</div>
+            </div>
+        </div>
+
+        <h2>核心心智模型</h2>
+        <ul class="model-list">
+            <li>
+                <span class="model-name">模型1</span>
+                <span class="tag tag-high">🟢 高置信</span>
+                <span class="status">✅ 持续</span>
+                <br>模型描述占位
+            </li>
+            <li>
+                <span class="model-name">模型2</span>
+                <span class="tag tag-medium">🟡 中置信</span>
+                <span class="status">🔄 演化</span>
+                <br>模型描述占位
+            </li>
+            <li>
+                <span class="model-name">模型3</span>
+                <span class="tag tag-low">🔴 推测</span>
+                <span class="status">❌ 已放弃</span>
+                <br>模型描述占位
+            </li>
+        </ul>
+
+        <h2>表达DNA</h2>
+        <p style="color: var(--muted); font-size: 14px; line-height: 1.6;">
+            蒸馏完成后，此处将展示此人的句式特征、高频用词、类比模式和表达节奏。
+        </p>
+
+        <div class="footer">
+            基于女娲 · Skill造人术 v2.0 | 调研截止: [待填写]
+        </div>
+    </div>
+</body>
+</html>
