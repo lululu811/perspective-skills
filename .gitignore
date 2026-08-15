@@ -4,6 +4,9 @@ references/sources/**/*.mp3
 references/sources/**/*.pdf
 references/sources/**/*.wav
 
+# 原始语料（不上传到GitHub）
+references/sources/
+
 # 系统文件
 .DS_Store
 *.DS_Store
