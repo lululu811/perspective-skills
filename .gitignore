@@ -1,0 +1,12 @@
+# 大文件素材（视频/音频/PDF）
+references/sources/**/*.mp4
+references/sources/**/*.mp3
+references/sources/**/*.pdf
+references/sources/**/*.wav
+
+# 系统文件
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
