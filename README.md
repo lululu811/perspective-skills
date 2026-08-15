@@ -43,10 +43,10 @@
 
 ```bash
 # 方式1：使用 skills CLI（推荐）
-npx skills add <your-username>/jiangju-perspective
+npx skills add lululu811/jiangju-perspective
 
 # 方式2：手动安装
-git clone https://github.com/<your-username>/jiangju-perspective.git
+git clone https://github.com/lululu811/jiangju-perspective.git
 cd jiangju-perspective
 # 将 SKILL.md 放到你的 Agent 能读取的位置
 ```
@@ -227,6 +227,30 @@ jiangju-perspective/
 
 - [花叔](https://x.com/AlchainHust) - 女娲项目作者
 - 本 Skill 由女娲 v2.0 生成，含置信度标注体系
+
+---
+
+## 同门兄弟项目
+
+都是用人物蒸馏方法论做的思维操作系统，每个都有独特的视角：
+
+| 项目 | 蒸馏对象 | 一句话定位 |
+|------|---------|-----------|
+| [**zettaranc-skill**](https://github.com/lululu811/zettaranc-skill) | 交易员思维 | 「利润是市场给的，都是概率的事儿」——交易决策的思维框架 |
+| [**mo-skill**](https://github.com/lululu811/mo-skill) | BOSS墨 | 285期B站视频里的交易思维蒸馏 |
+| [**benben-jiucai-perspective**](https://github.com/lululu811/benben-jiucai-perspective) | 笨笨的韭菜 | 260万字视频蒸馏成9个心智模型+10条决策启发式 |
+| [**fupeng-perspective**](https://github.com/lululu811/fupeng-perspective) | 付鹏 | 东北证券首席经济学家的宏观分析框架 |
+| [**jiangju-perspective**](https://github.com/lululu811/jiangju-perspective) | 战国时代_姜汁汽水 | 地缘财经思维（你正在看的这个） |
+
+### 配套工具
+
+| 项目 | 用途 |
+|------|------|
+| [**bilibili-subtitle-downloader**](https://github.com/lululu811/bilibili-subtitle-downloader) | B站视频字幕下载器（人物蒸馏的数据采集工具） |
+| [**content-factory**](https://github.com/lululu811/content-factory) | A股投研AI编辑部（内容生产SOP） |
+| [**halo-skill**](https://github.com/lululu811/halo-skill) | 股票数据验证（你让AI分析一只股票，它给了你一堆数字——但你不知道哪些是真的） |
+| [**ai-news-radar**](https://github.com/lululu811/ai-news-radar) | 24h AI/科技新闻雷达 |
+| [**TrendRadar**](https://github.com/lululu811/TrendRadar) | AI舆情监控与热点筛选 |
 
 ---
 
