@@ -1,0 +1,103 @@
+# 战国时代_姜汁汽水 知识获取渠道配置
+# 人物类型：中国B站UP主（地缘+财经分析）
+
+person:
+  name: 战国时代_姜汁汽水
+  uid: "1039025435"
+  type: 中国B站UP主
+  platform_primary: bilibili
+  platform_secondary: weibo
+
+# 渠道优先级配置
+channels:
+  # === 视频渠道（最高优先级）===
+  video:
+    - name: bilibili
+      enabled: true
+      priority: 1
+      description: B站原始视频（非搬运号）
+      profile_url: https://space.bilibili.com/1039025435
+      content_types:
+        - 长视频（30-60分钟，地缘+财经分析）
+        - 充电专属视频（付费内容）
+        - 动态（碎片观点、预测回顾）
+      extraction_method: 字幕下载 / whisper转写
+      notes: |
+        核心素材来源。287+条投稿。
+        重点系列：
+        - 「2025-2029局势推演」系列（3集，播放量77万+/73万+/49万+）
+        - 「新三线剧本」系列
+        - 「东方经济」合集（5集）
+        - 「琉球」系列
+        - 「夜谈」系列
+        - 美国观察系列
+        充电专属内容优先级最高（信息密度更大）
+
+    - name: youtube
+      enabled: true
+      priority: 2
+      description: YouTube同步频道（官方搬运）
+      extraction_method: 字幕下载（优先人工字幕）
+      notes: 与B站内容同步，可作为字幕获取的备选渠道
+
+  # === 文本渠道（高优先级）===
+  text:
+    - name: weibo
+      enabled: true
+      priority: 3
+      description: 微博动态（@战国时代_姜汁汽水）
+      profile_url: https://weibo.com/u/战国时代_姜汁汽水
+      content_types:
+        - 碎片化观点
+        - 预测回顾截图
+        - 实时评论
+      extraction_method: 网页抓取 / 用户提供截图
+      notes: ~4.4万粉丝，微博新知博主
+
+    - name: bilibili_dynamic
+      enabled: true
+      priority: 3
+      description: B站动态
+      content_types:
+        - 视频素材分享（1/N, 2/N...多图形式）
+        - 碎片观点
+        - 预测对账
+      extraction_method: 网页抓取 / 用户提供
+      notes: 动态区互动频繁
+
+  # === 音频渠道 ===
+  audio:
+    - name: xiaoyuzhou
+      enabled: false
+      priority: 5
+      description: 小宇宙播客
+      notes: 未发现独立播客，暂不启用
+
+# === 黑名单 ===
+blacklist:
+  - name: 知乎
+    reason: 洗稿严重、信息失真率高
+  - name: 微信公众号
+    reason: 封闭生态、无法验证、大量二手转述
+  - name: 百度百科
+    reason: 信息陈旧且不可靠
+  - name: 百度知道
+    reason: 信息不可靠
+
+# === 用户本地语料 ===
+local_sources:
+  enabled: true
+  priority: 0  # 最高优先级
+  paths:
+    transcripts: references/sources/transcripts/
+    articles: references/sources/articles/
+    books: references/sources/books/
+  notes: |
+    用户将提供一手素材（视频字幕/文稿/动态等）
+    本地语料优先级最高，网络搜索仅用于补充
+
+# === 质量规则 ===
+quality:
+  min_sources_per_dimension: 5
+  min_primary_source_ratio: 0.5  # 一手来源占比至少50%
+  confidence_threshold: 0.6
