@@ -6,7 +6,15 @@ references/sources/**/*.wav
 
 # 系统文件
 .DS_Store
+*.DS_Store
 
 # Python
 __pycache__/
 *.pyc
+
+# OMC状态文件（不应公开）
+.omc/
+
+# 备份文件
+*-backup.md
+*-internal-backup.md
