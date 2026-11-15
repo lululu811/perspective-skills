@@ -5,7 +5,7 @@
 - **方案 A：只装 Skill**（5 分钟）——纯框架/人格问答，不需要行情数据。
 - **方案 B：Skill + 数据工具 `zt`**（推荐）——能看真实行情、跑指标/战法/回测。
 
-> 新 Skill 包目前还没有远端仓库。新电脑上先把它发布到 GitHub 后 `git clone`，或用 `scp`/压缩包把 `zettaranc-perspective/` 拷过去。
+> 远端仓库：https://github.com/lululu811/zettaranc-perspective
 
 ---
 
@@ -26,7 +26,7 @@
 
 ```bash
 # 1. 拿到 skill 目录（二选一）
-git clone <skill-repo-url> zettaranc-perspective
+git clone https://github.com/lululu811/zettaranc-perspective.git zettaranc-perspective
 # 或：从旧电脑拷贝
 # scp -r old-machine:/path/to/zettaranc-perspective ./zettaranc-perspective
 

@@ -2,6 +2,8 @@
 
 Z 哥（zettaranc / 万千）思维框架与表达方式的独立 Skill 包。纯文档，不包含数据代码；需要真实行情时，通过外部 `zt` CLI 取数。
 
+> 仓库：https://github.com/lululu811/zettaranc-perspective
+
 ## 安装
 
 把本目录链接或复制到宿主的 skills 目录：
