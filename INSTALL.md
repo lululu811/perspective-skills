@@ -17,12 +17,29 @@
 | git | 任意近期版本 | 拉代码 |
 | 磁盘 | 约 1 GB | 代码 + venv + 本地行情库 |
 | 网络 | 能访问数据源 | 只装 Skill 时不需要 |
+| Node.js | >= 18 | 仅 `npx` 安装方式需要 |
 
-可选：Rust（加速回测）、Node.js（前端看板）、`pypinyin`（拼音搜股）。都不是必需。
+可选：Rust（加速回测）、`pypinyin`（拼音搜股）、Node.js 18+（前端看板）。都不是必需。
 
 ---
 
 ## 方案 A：只装 Skill
+
+### A1. 最快：npx
+
+```bash
+npx zettaranc-perspective
+```
+
+默认装到 `~/.claude/skills/zettaranc-perspective`。项目级安装：
+
+```bash
+npx zettaranc-perspective --project     # 装到 ./.claude/skills
+```
+
+已有安装时加 `--force` 覆盖；`--list` 只看文件，`--dry-run` 只预演。`npx` 需要 Node.js >= 18。
+
+### A2. 手动链接（不依赖 npm）
 
 ```bash
 # 1. 拿到 skill 目录（二选一）
@@ -189,10 +206,12 @@ mklink /J "%USERPROFILE%\.claude\skills\zettaranc-perspective" "C:\path\to\zetta
 
 ```bash
 python3 --version                 # >= 3.12
+node --version                    # >= 18（仅 npx 安装需要）
 command -v zt                     # 有输出
 zt --help                         # 16 个子命令
 zt sync status                    # 能看到数据库路径和 K 线数
 zt analyze 600519.SH --days 120 --json   # 返回合法 JSON
+npx zettaranc-perspective --version      # 4.13.1
 ```
 
 Skill 侧：
@@ -212,6 +231,8 @@ ls -l ~/.claude/skills/zettaranc-perspective/SKILL.md
 | `python: command not found` | 系统只有 `python3` | 用 `python3` 替代 |
 | `pip install -e .` 报 Python 版本不满足 | 低于 3.12 | 升级 Python |
 | `zt: command not found` | venv 未激活 / PATH 没有 | `source .venv/bin/activate` 或按 B4 软链 |
+| `npx zettaranc-perspective` 报 404 | npm 包未发布或 registry 未同步 | 用方案 A2 手动安装 |
+| `npx` 报 Node 版本过低 | Node < 18 | 升级 Node，或用手动方式 |
 | `no such table: stock_basic` | 数据库未初始化 | `zt sync init` |
 | `zt sync status --json` 报参数错误 | `sync` 子命令不支持 `--json` | 去掉 `--json` |
 | 同步成功但分析没数据 | 数据源/Key 没配好，或没同步该股票 | 看 `zt sync status`，再 `zt sync sync <code>` |

@@ -6,7 +6,22 @@ Z 哥（zettaranc / 万千）思维框架与表达方式的独立 Skill 包。�
 
 ## 安装
 
-把本目录链接或复制到宿主的 skills 目录：
+```bash
+npx zettaranc-perspective
+```
+
+默认安装到 `~/.claude/skills/zettaranc-perspective`。常用参数：
+
+| 命令 | 作用 |
+|---|---|
+| `npx zettaranc-perspective` | 安装到用户级 `~/.claude/skills` |
+| `npx zettaranc-perspective --project` | 安装到当前项目 `./.claude/skills` |
+| `npx zettaranc-perspective --dir <path>` | 安装到指定目录（精确路径） |
+| `npx zettaranc-perspective --force` | 覆盖已有安装 |
+| `npx zettaranc-perspective --list` | 只列出将安装的文件 |
+| `npx zettaranc-perspective --dry-run` | 预演，不写文件 |
+
+`npx` 包是薄封装，内容与本仓库一致；也可以手动链接或复制：
 
 ```bash
 # Claude Code（推荐 symlink，便于跟随本目录更新）
