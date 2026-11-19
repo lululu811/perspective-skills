@@ -1,0 +1,51 @@
+{
+  "name": "zettaranc-perspective",
+  "version": "4.13.1",
+  "description": "Z 哥（zettaranc/万千）思维框架与表达方式的独立 Skill 包，一行命令安装到 Claude Code / Cursor 等 agent。",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "zettaranc-perspective": "bin/install.mjs"
+  },
+  "files": [
+    "bin/",
+    "SKILL.md",
+    "knowledge/",
+    "references/",
+    "skill.json",
+    "test-prompts.json",
+    "INSTALL.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/install.test.mjs",
+    "check:version": "node scripts/check-version.mjs",
+    "prepublishOnly": "npm run check:version && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lululu811/zettaranc-perspective.git"
+  },
+  "homepage": "https://github.com/lululu811/zettaranc-perspective",
+  "bugs": {
+    "url": "https://github.com/lululu811/zettaranc-perspective/issues"
+  },
+  "author": {
+    "name": "lululu811",
+    "url": "https://github.com/lululu811"
+  },
+  "keywords": [
+    "zettaranc",
+    "a-share",
+    "trading",
+    "technical-analysis",
+    "claude-code",
+    "agent-skill",
+    "A股",
+    "交易纪律",
+    "人格蒸馏"
+  ]
+}
