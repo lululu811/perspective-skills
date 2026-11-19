@@ -118,6 +118,18 @@ npx github:lululu811/perspective-skills --all --dry-run
 
 硬性标准：来源可追溯、每条论断标可信度、写不清的地方写进「边界」而不是编。`fupeng-perspective` 里保留了这条流水线的完整实现，想自己造人可以直接拿它当模板。
 
+## 🔄 与源仓库的关系
+
+`skills/<slug>/` 是各源仓库（`lululu811/<slug>`）的快照，**源仓库仍是唯一的编辑入口**，本仓库只做聚合与分发：
+
+```bash
+scripts/sync.sh --check    # 只报告哪些 Skill 落后于源仓库（有落后时 exit 1）
+scripts/sync.sh            # 全部同步，逐个提交
+scripts/sync.sh mo-skill   # 只同步一个
+```
+
+同步用 `git read-tree` 整体替换子树，源仓库的提交历史仍保留在 git graph 中。社交预览图源文件在 [`docs/social-preview.html`](docs/social-preview.html)。
+
 ## 📄 许可与边界
 
 - **脚手架**（`bin/`、`package.json`、本 README）：MIT，见 [LICENSE](LICENSE)。
