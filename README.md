@@ -50,29 +50,29 @@
 
 ## 🚀 安装
 
-需要 Node.js ≥ 18。
+需要 Node.js ≥ 18。直接走 GitHub 源即可，无需等 npm 发布：
 
 ```bash
 # 看看有哪些、装没装
-npx perspective-skills
+npx github:lululu811/perspective-skills
 
 # 装一个（安装目录名取自 SKILL.md 的 name 字段）
-npx perspective-skills zettaranc-perspective
+npx github:lululu811/perspective-skills zettaranc-perspective
 
 # 装多个
-npx perspective-skills albrooks-perspective jianfang-perspective
+npx github:lululu811/perspective-skills albrooks-perspective jianfang-perspective
 
 # 全装
-npx perspective-skills --all
+npx github:lululu811/perspective-skills --all
 
 # 只装到当前项目
-npx perspective-skills zettaranc-perspective --project
+npx github:lululu811/perspective-skills zettaranc-perspective --project
 
 # 装到别的 agent（Cursor / Codex ...）
-npx perspective-skills --all --dir ~/.cursor/skills
+npx github:lululu811/perspective-skills --all --dir ~/.cursor/skills
 
 # 先看会做什么，不写文件
-npx perspective-skills --all --dry-run
+npx github:lululu811/perspective-skills --all --dry-run
 ```
 
 | 选项 | 作用 |
@@ -86,7 +86,9 @@ npx perspective-skills --all --dry-run
 | `--dry-run` | 预演，不写文件 |
 | `--json` | JSON 输出，便于脚本调用 |
 
-不用 npm 也行：把 `skills/<slug>/` 整个复制到 agent 的 skills 目录即可，`SKILL.md` 是唯一入口。
+不用 npx 也行：把 `skills/<slug>/` 整个复制到 agent 的 skills 目录即可，`SKILL.md` 是唯一入口。
+
+> 发布到 npm 后（`npm publish`）短命令 `npx perspective-skills` 也会生效；当前未发布，请用上面的 GitHub 源形式。
 
 ## 💬 怎么用
 
