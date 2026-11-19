@@ -1,0 +1,28 @@
+# 原始语料 - 体积过大，不上传
+references/sources/transcripts/
+references/sources/articles/
+
+# OMC 状态文件
+.omc/
+.omc/**
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+
+# 临时文件
+*.tmp
+*.log
