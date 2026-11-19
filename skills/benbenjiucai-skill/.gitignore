@@ -1,0 +1,19 @@
+# 一手原始素材（体积大、版权敏感，不提交到git）
+references/sources/
+
+# OMC 会话状态（临时文件，不提交）
+.omc/*
+# 但保留子 Skill 文件（需要版本控制）
+!.omc/skills/
+!.omc/skills/**/*
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.env
+
+# 临时文件
+*.tmp
+*.log
+.DS_Store
