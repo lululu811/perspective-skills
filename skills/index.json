@@ -1,0 +1,94 @@
+{
+  "skills": [
+    {
+      "slug": "zettaranc-perspective",
+      "name": "zettaranc-perspective",
+      "person": "Z 哥（zettaranc / 万千）",
+      "domain": "A 股技术面 · 战法解读 · 持仓诊断 · 职业与人生决策",
+      "corpus": "约 200 万字语料",
+      "output": "60+ 指标 · 30+ 战法 · 知识库 + 测试 prompts",
+      "license": "MIT"
+    },
+    {
+      "slug": "albrooks-perspective",
+      "name": "albrooks-perspective",
+      "person": "Al Brooks",
+      "domain": "价格行为 · 逐根 K 线分析",
+      "corpus": "459 集课程转写 + 68 概念页 + 132 图表",
+      "output": "10 心智模型 · 10 决策启发式",
+      "license": "未声明"
+    },
+    {
+      "slug": "benben-jiucai-perspective",
+      "name": "benben-jiucai-perspective",
+      "person": "笨笨的韭菜（笨总）",
+      "domain": "A 股景气度 · 仓位策略",
+      "corpus": "216 个视频 / 约 260 万字",
+      "output": "7 心智模型 · 10 决策启发式",
+      "license": "MIT"
+    },
+    {
+      "slug": "benbenjiucai-skill",
+      "name": "benbenjiucai-perspective",
+      "person": "笨笨的韭菜 · 深度版",
+      "domain": "投资思维 · 决策复盘",
+      "corpus": "2,506 篇问答 + 203 视频 + 1,188 条动态",
+      "output": "24 心智模型 · 50 决策启发式",
+      "license": "未声明"
+    },
+    {
+      "slug": "changshishan-perspective",
+      "name": "changshishan-perspective",
+      "person": "常士杉（私募一哥）",
+      "domain": "A 股实战 · 风控",
+      "corpus": "246 个视频转写 + 1 篇 PDF",
+      "output": "9 心智模型 · 8 决策启发式",
+      "license": "MIT"
+    },
+    {
+      "slug": "fupeng-perspective",
+      "name": "huashu-nuwa",
+      "person": "付鹏 + 女娲 v2.0 流程",
+      "domain": "宏观 · 资产配置 · 人物 Skill 蒸馏方法",
+      "corpus": "付鹏公开演讲与访谈 + 女娲完整作业流",
+      "output": "12 心智模型 · 6 阶段蒸馏流水线",
+      "license": "MIT"
+    },
+    {
+      "slug": "jiangju-perspective",
+      "name": "jiangju-perspective",
+      "person": "战国时代_姜汁汽水",
+      "domain": "国际局势 · 宏观经济 · 资产配置",
+      "corpus": "186 篇视频文稿 / 约 200 万字",
+      "output": "7 心智模型 · 8 决策启发式",
+      "license": "MIT"
+    },
+    {
+      "slug": "jianfang-perspective",
+      "name": "jianfang-perspective",
+      "person": "简放（焦峰）",
+      "domain": "3L 交易体系 · 量价择时",
+      "corpus": "渐进式 9 模块（按问题类型加载）",
+      "output": "14 决策启发式 · 8 条铁律 · 11 反模式",
+      "license": "未声明"
+    },
+    {
+      "slug": "mo-skill",
+      "name": "boss-mo-perspective",
+      "person": "BOSS 墨",
+      "domain": "A 股交易策略 · 节奏与盈亏比",
+      "corpus": "285 期 B 站视频字幕",
+      "output": "6 心智模型 · 10 决策启发式",
+      "license": "MIT"
+    },
+    {
+      "slug": "sanxian-skill",
+      "name": "sanxian-copywriting-perspective",
+      "person": "三线文案大锅饭",
+      "domain": "经济趋势 · 社会现象 · 个人选择",
+      "corpus": "371 个视频 + 1,690 篇知识星球文章",
+      "output": "9 心智模型 · 15 决策启发式",
+      "license": "未声明"
+    }
+  ]
+}

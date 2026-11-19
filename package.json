@@ -1,0 +1,37 @@
+{
+  "name": "perspective-skills",
+  "version": "1.0.0",
+  "description": "人物思维框架 Skill 合集：把交易者/博主/经济学家蒸馏成可对话的 AI 视角（Claude Code / Cursor / Codex 通用）",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "perspective-skills": "bin/install.mjs"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "list": "node bin/install.mjs"
+  },
+  "keywords": [
+    "agent-skill",
+    "claude-code",
+    "chatgpt",
+    "cursor",
+    "trading",
+    "a-share",
+    "persona",
+    "skill-distillation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lululu811/perspective-skills.git"
+  },
+  "homepage": "https://github.com/lululu811/perspective-skills#readme"
+}
